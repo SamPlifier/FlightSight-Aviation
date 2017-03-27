@@ -1,0 +1,107 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#farmDrone {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    object-position: bottom;
+}
+
+.ownVisMiss {
+    margin: 20px 20px 30px;
+    text-align: left;
+
+    .homeParagraph {
+        text-align: left;
+    }
+}
+
+nav.navbar {
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+    width: 100vw;
+}
+
+.mediaContainer {
+    margin-bottom: 50px;
+}
+
+.videoRow {
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 50%;
+        padding-top: 25px;
+        height: 0;
+    }
+
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contactContainer {
+    margin-bottom: 50px;
+
+    input.ng-invalid,
+    textarea.ng-invalid {
+        border: 1px solid red;
+    }
+
+    input.ng-valid,
+    textarea.ng-valid {
+        border: 1px solid green;
+    }
+
+    textarea {
+        resize: vertical;
+        max-height: 300px;
+        min-height: 68px;
+    }
+
+    .contactSubmit {
+        margin-top: 15px;
+    }
+
+    .glyphicon-map-marker {
+        color: red;
+    }
+
+    .glyphicon-earphone {
+        color: green;
+    }
+
+    .glyphicon-envelope {
+        color: #e0e00c;
+    }
+}
+
+.productsExample:hover {
+    cursor: pointer;
+}
+
+.panel-heading {
+    padding: 25px;
+}
+
+.productsContainer .panel-default > .panel-heading {
+    padding: 20px;
+}
+
+footer {
+    background: #222;
+    color: #9d9d9d;
+    padding: 40px 20px 20px;
+    font-size: 1.2rem;
+
+    #footerLogo {
+        margin: 30px;
+        width: 40%;
+    }
+}

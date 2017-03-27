@@ -1,0 +1,59 @@
+<div class="container contactContainer">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header text-center">
+                Contact
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <p>Feel free to send a message with questions or comments.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Chapel Hill, NC</p>
+            <p><span class="glyphicon glyphicon-earphone"></span> 919.423.6332</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> macalcdc@aol.com</p>
+        </div>
+        <div class="col-md-7">
+            <form name="contact_form" novalidate method="POST" action="http://formspree.io/flightsightaviation@gmail.com">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" type="text" placeholder="Name/Nombre" name="name" ng-model="contact.name" ng-minlength=2 ng-maxlength=35 required />
+                        <div class="error" ng-show="contact_form.name.$dirty && contact_form.name.$invalid">
+                            <p class="error" ng-show="contact_form.name.$error.required">
+                                Your name is required. Su nombre es requerido.</p>
+                            <p class="error" ng-show="contact_form.name.$error.minlength">
+                                Your name is required to be at least 2 characters. Su nombre debe tener al menos 2 caracteres.</p>
+                            <p class="error" ng-show="contact_form.name.$error.maxlength">
+                                Your name cannot be longer than 35 characters</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" type="email" placeholder="Email/Correo electronico" name="email" ng-model="contact.email" ng-minlength=5 ng-maxlength=60 required />
+                        <div class="error" ng-show="contact_form.email.$dirty && contact_form.email.$invalid">
+                            <p class="error" ng-show="contact_form.email.$error.required">
+                                Your email is required. Su correo electrónico es obligatorio.</p>
+                            <p class="error" ng-show="contact_form.email.$error.minlength">
+                                Your email is required to be at least 5 characters. Su correo electrónico debe tener más de 5 caracteres.</p>
+                            <p class="error" ng-show="contact_form.email.$error.email">
+                                Please input a valid email. Por favor, Escribe un correo electrónico válido.</p>
+                            <p class="error" ng-show="contact_form.email.$error.maxlength">
+                                Your email must be fewer than 60 characters. Su correo electrónico debe tener menos de 60 caracteres.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <textarea class="form-control" type="text" placeholder="Message/mensaje" name="message" ng-model="message" ng-minlength=20 ng-maxlength=1000 required/></textarea>
+                <div class="error" ng-show="contact_form.message.$dirty && contact_form.message.$invalid">
+                    <p class="error" ng-show="contact_form.message.$error.required">
+                        A message is required. Por favor escriba un mensaje.</p>
+                    <p class="error" ng-show="contact_form.message.$error.minlength">
+                        Must be more than 20 characters. Necesitamos más de 20 caracteres.</p>
+                    <p class="error" ng-show="contact_form.message.$error.maxlength">
+                        Must be 1000 or fewer characters. Necesitamos menos de 1000 caracteres.</p>
+                </div>
+
+                <button type="submit" ng-disabled="contact_form.$invalid" class="btn btn-default contactSubmit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
