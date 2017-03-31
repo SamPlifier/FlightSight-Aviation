@@ -48,4 +48,5 @@ flightSightApp.controller('MediaController', ['$scope', '$location', '$anchorScr
     function($scope, $location, $anchorScroll) {}
 ]);
 flightSightApp.controller('ContactController', function($scope) {});
-flightSightApp.controller('JoinUsController', function($scope) {});
+flightSightApp.controller('JoinUsController', function($scope) {
+});

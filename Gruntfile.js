@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    'lib/js/mainSafe.min.js': ['lib/js/mainSafe.js']
+                    'lib/js/annotated/concat/uglify/main.min.js': ['lib/js/annotated/concat/main.js']
                 }
             }
         },
@@ -28,8 +28,8 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['lib/min-safe/*.js'],
-                dest: 'lib/js/mainSafe.js'
+                src: ['lib/js/annotated/*.js'],
+                dest: 'lib/js/annotated/concat/main.js'
             }
         },
 
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
             },
             app: {
                 files: {
-                    './lib/min-safe/main.js': ['./lib/js/main.js']
+                    './lib/js/annotated/main.js': ['src/js/*js']
                 }
             }
         },
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
             },
 
             javascript: {
-                files: ['src/js/**/*'],
+                files: ['src/js/*'],
                 tasks: ['ngAnnotate', 'concat', 'uglify']
             },
 
