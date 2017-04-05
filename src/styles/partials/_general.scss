@@ -10,7 +10,7 @@ body::-webkit-scrollbar {
 }
 
 .aboutOwner {
-    margin: 20px 20px 30px;
+    // margin: 20px 20px 30px;
     text-align: left;
     line-height: 2.3rem;
 
@@ -24,9 +24,6 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 13px black;
     }
 
-    .homeParagraph {
-        text-align: left;
-    }
 }
 
 nav.navbar {
@@ -80,15 +77,15 @@ nav.navbar {
         margin-top: 15px;
     }
 
-    .glyphicon-map-marker {
+    .fa-map-marker {
         color: red;
     }
 
-    .glyphicon-earphone {
+    .fa-phone {
         color: green;
     }
 
-    .glyphicon-envelope {
+    .fa-envelope {
         color: #e0e00c;
     }
 }
