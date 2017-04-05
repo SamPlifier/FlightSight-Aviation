@@ -23,6 +23,7 @@ flightSightApp.config(function($routeProvider) {
             controller: 'JoinUsController'
         });
 });
+//Controllers
 flightSightApp.controller('HomeController', function($scope) {
     $scope.mobileLinkCollapse =
         function() {
@@ -34,19 +35,35 @@ flightSightApp.controller('HomeController', function($scope) {
     $scope.isNavCollapsed = true;
     $scope.isCollapsed = false;
 });
-flightSightApp.controller('ProductsController', ['$scope', '$location', '$anchorScroll',
-    function($scope, $location, $anchorScroll) {
+flightSightApp.controller('ProductsController', ['$scope', '$location', '$anchorScroll', 'mediaScroller',
+    function($scope, $location, $anchorScroll, mediaScroller) {
         $scope.mediaExample = function(example) {
-            $location.path('/media');
-            $location.hash(example);
+            // $location.path('/media');
+            // $location.hash(example);
+            $location.url('/media#' + example)
             $anchorScroll();
         }
+
         $scope.oneAtATime = false;
     }
 ]);
-flightSightApp.controller('MediaController', ['$scope', '$location', '$anchorScroll',
-    function($scope, $location, $anchorScroll) {}
+flightSightApp.controller('MediaController', ['$scope', '$location', '$anchorScroll', 'mediaScroller',
+    function($scope, $location, $anchorScroll, mediaScroller) {
+// console.log(mediaScroller.getArtist());
+    $scope.artist = mediaScroller.getArtist();
+    console.log($location);
+    }
 ]);
 flightSightApp.controller('ContactController', function($scope) {});
 flightSightApp.controller('JoinUsController', function($scope) {
+});
+// Factory
+flightSightApp.factory('mediaScroller', function() {
+
+    var artist = 'Sam';
+    var service = {};
+    service.getArtist = function() {
+        return artist;
+    }
+    return service;
 });
