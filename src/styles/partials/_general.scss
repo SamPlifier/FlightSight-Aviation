@@ -2,6 +2,64 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+video {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    // video {
+    //     height: 150px;
+    //     width: 100vw;
+    //     object-fit: cover;
+    //     object-position: center;
+    // }
+    .headerLogo {
+        opacity: 0.9;
+        display: flex;
+        background: url('https://images.pexels.com/photos/107906/pexels-photo-107906.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            height: 100px;
+            margin: 10px;
+        }
+
+        .faaLogo {
+            opacity: 0.8;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            // background: rgba(26, 86, 255, 0.35);
+            &:hover {
+                opacity: 1;
+                pointer: cursor;
+            }
+
+            #faaLogo {
+                border-radius: 50px;
+            }
+
+            h5 {
+                width: 211px;
+            a {
+                color: #333;
+                text-decoration: none;
+            }
+            }
+        }
+    }
+}
+
 #farmDrone {
     object-fit: cover;
     width: 100vw;
@@ -10,7 +68,6 @@ body::-webkit-scrollbar {
 }
 
 .aboutOwner {
-    // margin: 20px 20px 30px;
     text-align: left;
     line-height: 2.3rem;
 
@@ -24,6 +81,16 @@ body::-webkit-scrollbar {
         box-shadow: 0 0 13px black;
     }
 
+    .borderBottom {
+        border-bottom: 1px solid #eee;
+        margin: 0 0 20px;
+    }
+}
+
+.joinUs {
+    .subjectOfEmail {
+        font-weight: 600;
+    }
 }
 
 nav.navbar {
@@ -86,7 +153,7 @@ nav.navbar {
     }
 
     .fa-envelope {
-        color: #e0e00c;
+        color: #ffc107;
     }
 }
 
@@ -109,7 +176,7 @@ footer {
     font-size: 1.2rem;
 
     #footerLogo {
-        width: 250px;
+        width: 300px;
         margin: 20px 0;
     }
 
