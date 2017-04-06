@@ -4,6 +4,7 @@
 
         .headerLogo {
             flex-direction: column;
+            background-position: center;
 
             .faaLogo {
                 margin: 0;
@@ -42,13 +43,11 @@
         }
     }
 
-    .homeContainer {
-        .aboutOwner {
-            p {
+        #main {
+            p, h3, h4, ol {
                 font-size: 1.7rem;
                 line-height: 2.5rem;
-                margin-bottom: 20px;
+                // margin-bottom: 20px;
             }
         }
-    }
 }

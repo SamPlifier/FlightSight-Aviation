@@ -1,12 +1,12 @@
 body {
     &::-webkit-scrollbar {
-        display:none;
+        display: none;
     }
 }
-.scrollMargin {
-    margin-top:50px;
-}
 
+.scrollMargin {
+    margin-top: 50px;
+}
 // video {
 //     height: 100px;
 //     width: 100%;
@@ -18,13 +18,14 @@ header {
     display: flex;
     justify-content: center;
     height: 120px;
+
     .headerLogo {
         opacity: 0.9;
         display: flex;
         background: url('https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top;
         justify-content: space-between;
         align-items: center;
 
@@ -38,21 +39,23 @@ header {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+
             &:hover {
                 opacity: 1;
                 pointer: cursor;
             }
 
             #faaLogo {
-                border-radius: 50px;
+                border-radius: 48px;
             }
 
             h5 {
                 width: 211px;
-            a {
-                color: #333;
-                text-decoration: none;
-            }
+
+                a {
+                    color: #333;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -61,7 +64,7 @@ header {
 #farmDrone {
     object-fit: cover;
     width: 100vw;
-    height: 100vh;
+    height: 77vh;
     object-position: bottom;
 }
 
@@ -73,10 +76,11 @@ header {
         margin-bottom: 30px;
     }
 
-    #mauricioCessna {
-        height: 100%;
+    .mauricio {
+        width: 100%;
         margin-bottom: 30px;
         box-shadow: 0 0 13px black;
+        // float: left;
     }
 
     .borderBottom {
