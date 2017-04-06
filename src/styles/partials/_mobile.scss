@@ -8,6 +8,11 @@
             .faaLogo {
                 margin: 0;
                 flex-direction: column-reverse;
+
+                h5 {
+                    width: 200px;
+                    text-align: justify;
+                }
             }
         }
     }
