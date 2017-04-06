@@ -1,4 +1,17 @@
 @media (max-width: 767px) {
+    header {
+        height: 305px;
+
+        .headerLogo {
+            flex-direction: column;
+
+            .faaLogo {
+                margin: 0;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
     footer,
     nav {
         font-size: 1.7rem;
@@ -9,9 +22,11 @@
             margin: 0;
             padding: 15px 0;
         }
+
         .fa-lg {
             margin-right: 5px;
         }
+
         .socialContainer {
             .social {
                 height: 48px;
