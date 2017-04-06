@@ -1,19 +1,23 @@
-body::-webkit-scrollbar {
-    display: none;
+body {
+    &::-webkit-scrollbar {
+        display:none;
+    }
+}
+.scrollMargin {
+    margin-top:50px;
 }
 
-video {
-    height: 100px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+// video {
+//     height: 100px;
+//     width: 100%;
+//     object-fit: cover;
+//     object-position: center;
+// }
 
 header {
     display: flex;
     justify-content: center;
     height: 120px;
- //https://images.pexels.com/photos/107906/pexels-photo-107906.jpeg?w=940&h=650&auto=compress&cs=tinysrgb
     .headerLogo {
         opacity: 0.9;
         display: flex;
