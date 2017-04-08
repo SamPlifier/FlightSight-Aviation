@@ -100,6 +100,12 @@ nav.navbar {
     border: none;
     margin-bottom: 0;
     width: 100vw;
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        float: none;
+    }
 }
 
 .mediaContainer {
