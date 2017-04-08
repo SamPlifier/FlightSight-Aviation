@@ -78,9 +78,11 @@ header {
 
     .mauricio {
         width: 100%;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         box-shadow: 0 0 13px black;
-        // float: left;
+        height:350px;
+        object-fit: cover;
+        object-position: center;
     }
 
     .borderBottom {
