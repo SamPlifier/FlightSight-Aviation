@@ -42,35 +42,29 @@ flightSightApp.controller('HomeController', function($scope) {
 flightSightApp.controller('ServicesController', ['$scope', '$location', '$anchorScroll', 'mediaScroller',
     function($scope, $location, $anchorScroll, mediaScroller) {
         $scope.mediaExample = function(example) {
-            // $location.path('/media');
-            // $location.hash(example);
-            $location.url('/media#' + example)
-            $anchorScroll();
+            $location.path('/media');
+            mediaScroller.scrollDown(example);
         }
-
         $scope.oneAtATime = false;
     }
 ]);
 flightSightApp.controller('MediaController', ['$scope', '$location', '$anchorScroll', 'mediaScroller',
     function($scope, $location, $anchorScroll, mediaScroller) {
-console.log(mediaScroller.getArtist());
-    $scope.artist = mediaScroller.getArtist();
-    console.log($location);
+        $location.hash(mediaScroller.scrollId());
     }
 ]);
 flightSightApp.controller('ContactController', function($scope) {});
-flightSightApp.controller('JoinUsController', function($scope) {
-});
-flightSightApp.controller('AboutUsController', function($scope) {
-    // console.log(document.getElementsByClassName('ng-scope')[0]);
-})
+flightSightApp.controller('JoinUsController', function($scope) {});
+flightSightApp.controller('AboutUsController', function($scope) {})
 // Factory
 flightSightApp.factory('mediaScroller', function() {
-
-    var artist = 'Sam';
     var service = {};
-    service.getArtist = function() {
-        return artist;
+    var lastClicked;
+    service.scrollId = function() {
+        return lastClicked;
+    }
+    service.scrollDown = function(example1) {
+        lastClicked = example1;
     }
     return service;
 });

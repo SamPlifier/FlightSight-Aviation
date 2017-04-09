@@ -17,8 +17,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    height: 120px;
-
+    // height: 200px;
     .headerLogo {
         opacity: 0.9;
         display: flex;
@@ -30,7 +29,7 @@ header {
         align-items: center;
 
         img {
-            height: 100px;
+            height: 130px;
             margin: 10px;
         }
 
@@ -42,18 +41,21 @@ header {
 
             &:hover {
                 opacity: 1;
-                pointer: cursor;
             }
 
             #faaLogo {
-                border-radius: 48px;
+                border-radius: 65px;
             }
 
             h5 {
                 width: 211px;
 
+                &:hover {
+                    cursor: pointer;
+                }
+
                 a {
-                    color: #333;
+                    color: #222;
                     text-decoration: none;
                 }
             }
@@ -80,7 +82,7 @@ header {
         width: 100%;
         // margin-bottom: 30px;
         box-shadow: 0 0 13px black;
-        height:350px;
+        height: 350px;
         object-fit: cover;
         object-position: center;
     }

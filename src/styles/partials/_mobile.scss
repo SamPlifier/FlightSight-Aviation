@@ -1,6 +1,6 @@
 @media (max-width: 767px) {
     header {
-        height: 305px;
+        height: 350px;
 
         .headerLogo {
             flex-direction: column;
@@ -11,9 +11,8 @@
                 flex-direction: column-reverse;
 
                 h5 {
-                    color: #333;
                     width: 200px;
-                    text-align: justify;
+                    text-align: center;
                 }
             }
         }

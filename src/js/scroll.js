@@ -15,11 +15,11 @@ function unfixNav() {
 window.addEventListener('scroll', function(e) {
     pxFromTop = window.scrollY;
     windWidth = window.innerWidth;
-    if (((windWidth > 767 && pxFromTop > 120) || (windWidth <= 767 && pxFromTop > 305)) && (navbar.className === 'navbar navbar-inverse')) {
+    if (((windWidth > 767 && pxFromTop > 150) || (windWidth <= 767 && pxFromTop > 350)) && (navbar.className === 'navbar navbar-inverse')) {
         window.requestAnimationFrame(function() {
             fixNavTop();
         });
-    } else if (((windWidth > 767 && pxFromTop <= 120) || (windWidth <= 767 && pxFromTop <= 305)) && (navbar.className === 'navbar navbar-inverse navbar-fixed-top')) {
+    } else if (((windWidth > 767 && pxFromTop <= 150) || (windWidth <= 767 && pxFromTop <= 350)) && (navbar.className === 'navbar navbar-inverse navbar-fixed-top')) {
         window.requestAnimationFrame(function() {
             unfixNav();
         });
