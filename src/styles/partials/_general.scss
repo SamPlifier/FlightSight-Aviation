@@ -17,15 +17,24 @@ body {
 header {
     display: flex;
     justify-content: center;
+
     .headerLogo {
         opacity: 0.9;
         height: 230px;
         display: flex;
-        background: url(https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+ background: -webkit-linear-gradient(left top, #b5d8f4, #7598cc);
+/* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(bottom right, #b5d8f4, #7598cc);
+/* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(bottom right, #b5d8f4, #7598cc);
+/* For Firefox 3.6 to 15 */
+background: linear-gradient(bottom right, #b5d8f4 , #7598cc);
+/* Standard syntax */
+background: linear-gradient(to bottom right, #b5d8f4, #7598cc);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
         img {
@@ -63,11 +72,16 @@ header {
     }
 }
 
-#farmDrone {
+#homeDrone {
     object-fit: cover;
     width: 100vw;
-    height: 83vh;
-    object-position: bottom;
+    height: 73vh;
+    object-position: center;
+    // filter: grayscale(100%);
+    // transition: all ease 2s;
+    // &:hover {
+    //     filter:grayscale(0);
+    // }
 }
 
 .aboutOwner {
@@ -106,7 +120,7 @@ nav.navbar {
 
     .navbar-nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         float: none;
     }
 }
