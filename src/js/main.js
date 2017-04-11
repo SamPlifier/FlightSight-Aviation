@@ -27,6 +27,10 @@ flightSightApp.config(function($routeProvider) {
             controller: 'AboutUsController'
         });
 });
+// always scroll by 50 fewer pixels
+flightSightApp.run(['$anchorScroll', function($anchorScroll) {
+    $anchorScroll.yOffset = 50;
+}]);
 //Controllers
 flightSightApp.controller('HomeController', function($scope) {
     $scope.mobileLinkCollapse =
@@ -48,9 +52,12 @@ flightSightApp.controller('ServicesController', ['$scope', '$location', '$anchor
         $scope.oneAtATime = false;
     }
 ]);
-flightSightApp.controller('MediaController', ['$scope', '$location', '$anchorScroll', 'mediaScroller',
-    function($scope, $location, $anchorScroll, mediaScroller) {
-        $location.hash(mediaScroller.scrollId());
+flightSightApp.controller('MediaController', ['$scope', '$location', '$anchorScroll', 'mediaScroller', '$window',
+    function($scope, $location, $anchorScroll, mediaScroller, $window) {
+        // $location.hash(mediaScroller.scrollId());
+
+        // $anchorScroll($location.hash(mediaScroller.scrollId()));
+        $anchorScroll(mediaScroller.scrollId());
     }
 ]);
 flightSightApp.controller('ContactController', function($scope) {});
@@ -60,11 +67,11 @@ flightSightApp.controller('AboutUsController', function($scope) {})
 flightSightApp.factory('mediaScroller', function() {
     var service = {};
     var lastClicked;
-    service.scrollId = function() {
-        return lastClicked;
-    }
     service.scrollDown = function(example1) {
         lastClicked = example1;
+    }
+    service.scrollId = function() {
+        return lastClicked;
     }
     return service;
 });

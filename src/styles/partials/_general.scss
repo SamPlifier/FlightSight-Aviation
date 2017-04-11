@@ -115,12 +115,12 @@ background: linear-gradient(to bottom right, #b5d8f4, #7598cc);
 nav.navbar {
     border-radius: 0;
     border: none;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     width: 100vw;
 
     .navbar-nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         float: none;
     }
 }
