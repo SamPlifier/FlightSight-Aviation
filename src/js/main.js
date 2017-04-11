@@ -1,7 +1,6 @@
 var flightSightApp = angular.module('flightSightAviationApp', ['ngRoute', 'ui.bootstrap', 'ngAnimate']);
 flightSightApp.config(function($routeProvider) {
     $routeProvider
-
         .when('/', {
             templateUrl: 'home.html',
             controller: 'HomeController'
@@ -54,9 +53,6 @@ flightSightApp.controller('ServicesController', ['$scope', '$location', '$anchor
 ]);
 flightSightApp.controller('MediaController', ['$scope', '$location', '$anchorScroll', 'mediaScroller', '$window',
     function($scope, $location, $anchorScroll, mediaScroller, $window) {
-        // $location.hash(mediaScroller.scrollId());
-
-        // $anchorScroll($location.hash(mediaScroller.scrollId()));
         $anchorScroll(mediaScroller.scrollId());
     }
 ]);

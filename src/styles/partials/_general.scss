@@ -22,18 +22,10 @@ header {
         opacity: 0.9;
         height: 230px;
         display: flex;
- background: -webkit-linear-gradient(left top, #b5d8f4, #7598cc);
-/* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(bottom right, #b5d8f4, #7598cc);
-/* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(bottom right, #b5d8f4, #7598cc);
-/* For Firefox 3.6 to 15 */
-background: linear-gradient(bottom right, #b5d8f4 , #7598cc);
-/* Standard syntax */
-background: linear-gradient(to bottom right, #b5d8f4, #7598cc);
+        background: url(../assets/cloudMountains.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top;
+        background-position: bottom;
         justify-content: space-around;
         align-items: center;
 
