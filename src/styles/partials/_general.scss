@@ -7,12 +7,6 @@ body {
 .scrollMargin {
     margin-top: 50px;
 }
-// video {
-//     height: 100px;
-//     width: 100%;
-//     object-fit: cover;
-//     object-position: center;
-// }
 
 header {
     display: flex;
@@ -69,11 +63,6 @@ header {
     width: 100vw;
     height: 73vh;
     object-position: center;
-    // filter: grayscale(100%);
-    // transition: all ease 2s;
-    // &:hover {
-    //     filter:grayscale(0);
-    // }
 }
 
 .aboutOwner {
@@ -211,6 +200,9 @@ footer {
             align-items: center;
             justify-content: center;
             margin: 0 5px;
+            &:hover {
+                cursor: pointer;
+            }
 
             &:hover:first-child {
                 box-shadow: -1px 0px 15px #5566ec;
