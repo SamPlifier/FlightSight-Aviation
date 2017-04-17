@@ -7,7 +7,12 @@ body {
 .scrollMargin {
     margin-top: 50px;
 }
-
+.btn[disabled] {
+    opacity: .5 !important;
+}
+.contactContainer .btn-default:hover {
+    background-color: #8BC34A;
+}
 header {
     display: flex;
     justify-content: center;
@@ -175,6 +180,14 @@ nav.navbar {
     padding: 20px;
 }
 
+    .aviatorsContainer {
+        margin-bottom: 30px;
+        img {
+            width: 80%;
+        }
+    }
+
+
 footer {
     background: #222;
     color: #9d9d9d;
@@ -200,20 +213,23 @@ footer {
             align-items: center;
             justify-content: center;
             margin: 0 5px;
+
             &:hover {
                 cursor: pointer;
             }
 
             &:hover:first-child {
-                box-shadow: -1px 0px 15px #5566ec;
+                box-shadow: -1px 0 15px #5566ec;
                 color: #5566ec;
             }
+
             &:hover:nth-child(2) {
-                box-shadow: -1px 0px 15px #e62117;
+                box-shadow: -1px 0 15px #e62117;
                 color: #e62117;
             }
+
             &:hover:nth-child(3) {
-                box-shadow: -1px 0px 15px #a53f92;
+                box-shadow: -1px 0 15px #a53f92;
                 color: #a53f92;
             }
         }
