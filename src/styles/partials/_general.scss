@@ -7,12 +7,15 @@ body {
 .scrollMargin {
     margin-top: 50px;
 }
+
 .btn[disabled] {
-    opacity: .5 !important;
+    opacity: 0.5 !important;
 }
+
 .contactContainer .btn-default:hover {
     background-color: #8BC34A;
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -70,7 +73,7 @@ header {
     object-position: center;
 }
 
-.aboutOwner {
+.aboutStaff {
     text-align: left;
     line-height: 2.3rem;
 
@@ -78,17 +81,29 @@ header {
         margin-bottom: 30px;
     }
 
-    .mauricio {
+    .staffMembers {
         width: 100%;
-        box-shadow: 0 0 13px black;
-        height: 350px;
-        object-fit: cover;
-        object-position: center;
-    }
 
-    .borderBottom {
-        border-bottom: 1px solid #eee;
-        margin: 0 0 20px;
+        .staffName {
+            font-size: 2rem;
+        }
+
+        img {
+            height: 290px;
+            width: 290px;
+            object-position: top;
+            border-radius: 200px;
+            object-fit: cover;
+
+            &.owner {
+                transform: rotate(7deg);
+            }
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: left;
+        }
     }
 }
 
@@ -108,6 +123,26 @@ nav.navbar {
         display: flex;
         justify-content: center;
         float: none;
+
+    }
+    .displayToggle {
+        display: none;
+    }
+    .navDropDown {
+        list-style-type: none;
+        text-align: left;
+        padding: 5px 15px;
+        position: absolute;
+        background: #9d9d9d;
+
+
+        li a {
+            color: #222;
+            text-decoration: none;
+            &:hover {
+                color: white;
+            }
+        }
     }
 }
 
@@ -180,13 +215,13 @@ nav.navbar {
     padding: 20px;
 }
 
-    .aviatorsContainer {
-        margin-bottom: 30px;
-        img {
-            width: 80%;
-        }
-    }
+.aviatorsContainer {
+    margin-bottom: 30px;
 
+    img {
+        width: 80%;
+    }
+}
 
 footer {
     background: #222;

@@ -38,12 +38,17 @@
             </div>
             <div class="collapse navbar-collapse text-center" uib-collapse="isNavCollapsed">
                 <ul class="nav navbar-nav">
-                    <li ng-click="mobileLinkCollapse()"><a href="#/" class="navLinks">Home</a></li>
-                    <li ng-click="mobileLinkCollapse()"><a href="#services" class="navLinks">Services</a></li>
-                    <li ng-click="mobileLinkCollapse(); resetHash()"><a href="#media" class="navLinks">Media</a></li>
-                    <li ng-click="mobileLinkCollapse()"><a href="#contact" class="navLinks">Contact</a></li>
-                    <li ng-click="mobileLinkCollapse()"><a href="#about" class="navLinks">About us</a></li>
-                    <li ng-click="mobileLinkCollapse()"><a href="#joinUs" class="navLinks">Join us</a>
+                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#/" class="navLinks">Home</a></li>
+                    <li ng-click="navDrop.toggleNavDropDown()"><a href="" class="navLinks">Services</a>
+                    <ul class="navDropDown displayToggle">
+                        <li ng-click="mobileLinkCollapse()"><a href="#droneServices" class="navLinks">Drone</a>
+                        <li ng-click="mobileLinkCollapse()"><a href="#aviationServices" class="navLinks">Aviation</a>
+                    </ul>
+                    </li>
+                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#media" class="navLinks">Media</a></li>
+                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#contact" class="navLinks">Contact</a></li>
+                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#about" class="navLinks">About us</a></li>
+                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#joinUs" class="navLinks">Join us</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +78,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <img src="lib/assets/DroneBizLogoGrey.svg" alt="Flight sight aviation logo, grey" id="footerLogo">
+                <img src="lib/assets/droneBizLogoGrey.svg" alt="Flight sight aviation logo, grey" id="footerLogo">
                 <p>FlightSight Aviation, LLC &copy; 2017</p>
             </div>
         </div>
