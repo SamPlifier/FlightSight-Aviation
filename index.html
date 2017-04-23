@@ -20,11 +20,8 @@
 <body ng-controller="HomeController">
     <header>
         <div class="headerLogo">
-            <img src="lib/assets/DroneBizLogoBlue.svg" alt="Flight sight aviation logo. Blue and red drone with a camera icon in the center.">
-            <div class="faaLogo">
-                <img src="http://www.unmannedsystemstechnology.com/wp-content/uploads/2013/04/FAA.jpg" alt="Federal Aviation Administration Logo" id="faaLogo">
-                <h5><a href="https://www.faa.gov/news/fact_sheets/news_story.cfm?newsId=20516" target="_blank">Commercial FAA Part 107 certified and compliant.</a></h5>
-            </div>
+            <img src="lib/assets/droneBizLogoBlue.svg" alt="Flight sight aviation logo. Blue and red drone with a camera icon in the center.">
+            <a href="https://www.faa.gov/news/fact_sheets/news_story.cfm?newsId=20516" target="_blank">Commercial FAA Part 107 certified and compliant.</a>
         </div>
     </header>
     <nav class="navbar navbar-inverse" role="navigation">
@@ -40,16 +37,16 @@
                 <ul class="nav navbar-nav">
                     <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#/" class="navLinks">Home</a></li>
                     <li ng-click="navDrop.toggleNavDropDown()"><a href="" class="navLinks">Services</a>
-                    <ul class="navDropDown displayToggle">
-                        <li ng-click="mobileLinkCollapse()"><a href="#droneServices" class="navLinks">Drone</a>
-                        <li ng-click="mobileLinkCollapse()"><a href="#aviationServices" class="navLinks">Aviation</a>
-                    </ul>
-                    </li>
-                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#media" class="navLinks">Media</a></li>
-                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#contact" class="navLinks">Contact</a></li>
-                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#about" class="navLinks">About us</a></li>
-                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#joinUs" class="navLinks">Join us</a>
-                    </li>
+                        <ul class="navDropDown displayToggle">
+                            <li ng-click="mobileLinkCollapse()"><a href="#droneServices" class="navLinks">Drone</a>
+                                <li ng-click="mobileLinkCollapse()"><a href="#aviationServices" class="navLinks">Aviation</a>
+                        </ul>
+                        </li>
+                        <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#media" class="navLinks">Media</a></li>
+                        <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#contact" class="navLinks">Contact</a></li>
+                        <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#about" class="navLinks">About us</a></li>
+                        <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#joinUs" class="navLinks">Join us</a>
+                        </li>
                 </ul>
             </div>
         </div>

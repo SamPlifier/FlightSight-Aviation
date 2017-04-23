@@ -4,18 +4,19 @@
 
         .headerLogo {
             height: 350px;
-            flex-direction: column;
+            // flex-direction: column;
             background-position: center;
+            justify-content: center;
 
-            .faaLogo {
-                margin: 0;
-                flex-direction: column-reverse;
-
-                h5 {
-                    width: 200px;
-                    text-align: center;
-                }
-            }
+            // .faaLogo {
+            //     margin: 0;
+            //     flex-direction: column-reverse;
+            //
+            //     h5 {
+            //         width: 200px;
+            //         text-align: center;
+            //     }
+            // }
         }
     }
 

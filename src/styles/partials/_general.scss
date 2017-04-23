@@ -24,45 +24,47 @@ header {
         opacity: 0.9;
         height: 230px;
         display: flex;
-        background: url("../assets/cloudMountains.jpeg");
+        flex-direction:column;
+        background: url("https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
-        justify-content: space-around;
+        background-position: center;
         align-items: center;
-
+        a {
+            color: white;
+        }
         img {
-            height: 130px;
+            height: 180px;
             margin: 10px;
         }
 
-        .faaLogo {
-            opacity: 0.8;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-
-            &:hover {
-                opacity: 1;
-            }
-
-            #faaLogo {
-                border-radius: 65px;
-            }
-
-            h5 {
-                width: 211px;
-
-                &:hover {
-                    cursor: pointer;
-                }
-
-                a {
-                    color: black;
-                    text-decoration: none;
-                }
-            }
-        }
+        // .faaLogo {
+        //     opacity: 0.8;
+        //     display: flex;
+        //     justify-content: flex-end;
+        //     align-items: center;
+        //
+        //     &:hover {
+        //         opacity: 1;
+        //     }
+        //
+        //     #faaLogo {
+        //         border-radius: 65px;
+        //     }
+        //
+        //     h5 {
+        //         width: 211px;
+        //
+        //         &:hover {
+        //             cursor: pointer;
+        //         }
+        //
+        //         a {
+        //             color: black;
+        //             text-decoration: none;
+        //         }
+        //     }
+        // }
     }
 }
 
