@@ -22,7 +22,7 @@ header {
 
     .headerLogo {
         opacity: 0.9;
-        height: 200px;
+        height: 230px;
         display: flex;
         flex-direction: column;
         background: url("../../lib/assets/12.png");
@@ -30,13 +30,15 @@ header {
         background-size: cover;
         background-position: center;
         align-items: center;
+        justify-content: center;
+        text-align: center;
 
         a {
             color: white;
         }
 
         img {
-            height: 170px;
+            height: 160px;
             margin: 10px;
         }
         // .faaLogo {
