@@ -138,13 +138,21 @@ nav.navbar {
         z-index: 2;
         list-style-type: none;
         text-align: left;
-        padding: 5px 15px;
+        padding: 0;
+        width: 100%;
         position: absolute;
         background: #9d9d9d;
 
-        li a {
+        li {
+            line-height: 20px;
+            margin: 10px 0;
+        }
+
+        li a.navLinks {
             color: #222;
             text-decoration: none;
+            display: block;
+            padding: 5px 15px;
 
             &:hover {
                 color: white;
@@ -232,7 +240,6 @@ nav.navbar {
 
 .aviation {
     .airplanes {
-
         img {
             width: 100%;
             height: 400px;

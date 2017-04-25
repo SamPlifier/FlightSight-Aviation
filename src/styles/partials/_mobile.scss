@@ -27,6 +27,13 @@
         .navDropDown {
             position: inherit;
             text-align: center;
+            padding: 10px 0;
+            li {
+                margin: 0;
+            }
+            li a.navLinks {
+                padding: 10px 15px;
+            }
         }
     }
 
