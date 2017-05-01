@@ -1,18 +1,23 @@
 <div class="container aviation">
     <div class="row">
-        <div class="col-md-12">
-            <h1 class="page-header text-center">Aviation Services</h1>
+        <div class="col-md-12 text-center">
+            <h1 class="page-header" ng-show="even">Aviation Services</h1>
+            <button ng-click="langSwitch()" ng-show="even">Para Español</button>
+            <h1 class="page-header" ng-show="odd">Servicios de Aviación</h1>
+            <button ng-click="langSwitch()" ng-show="odd">For English</button>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4>International Sales &amp; Aquisition</h4>
+                    <h4 ng-show="even">International Sales &amp; Aquisition</h4>
+                    <h4 ng-show="odd">Adquisicion &amp; Venta Internacional de Aviones</h4>
                 </div>
                 <div class="panel-body">
-                    <p>FlightSight Aviation will also be conducting business as a consulting and broker firm in the acquisition and sales of aircraft for Latin America. Customers interested in acquiring an aircraft would be guided through the process on type, brand or model of aircraft to fit their needs. We will be responsible for the purchase and delivery to its country of&nbsp;destination.
+                    <p ng-show="even">FlightSight Aviation conducts business as a consulting and broker firm in the acquisition and sales of aircraft for Latin America. Customers interested in acquiring an aircraft would be guided through the process on type, brand or model of aircraft to fit their needs. We will be responsible for the purchase and delivery to its country of&nbsp;destination.
                     </p>
+                    <p ng-show="odd">FlightSight Aviation va a proveer servicios de consultoría y apoyo en la adquisición de aviones  para Latinoamérica. Nuestros clientes interesados en adquirir un avión serán guiados y aconsejados en el tipo, marca y modelo de avión mas apropiado para sus necesidades y uso. Nosotros también somos responsables de la búsqueda, adquisición y traslado de la nave desde los Estados Unidos hasta el país de&nbsp;destino.</p>
                 </div>
             </div>
         </div>

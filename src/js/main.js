@@ -78,7 +78,21 @@ flightSightApp.controller('DroneServicesController', ['$scope', '$location', '$a
         $scope.oneAtATime = false;
     }
 ]);
-flightSightApp.controller('AviationServicesController', function($scope) {});
+flightSightApp.controller('AviationServicesController', function($scope) {
+    $scope.even = true;
+    $scope.odd;
+    $scope.clickCount = 0;
+    $scope.langSwitch = function(){
+        $scope.clickCount ++;
+        if ($scope.clickCount % 2 !== 0) {
+            $scope.even = false;
+            $scope.odd = true;
+        } else {
+            $scope.even = true;
+            $scope.odd = false;
+        }
+    }
+});
 flightSightApp.controller('MediaController', ['$scope', '$location', '$anchorScroll', 'mediaScroller', '$window',
     function($scope, $location, $anchorScroll, mediaScroller, $window) {
         $anchorScroll(mediaScroller.scrollId());
