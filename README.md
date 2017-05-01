@@ -1,3 +1,3 @@
-# FlightSight-Aviation
-## First minified Angular and UI-Bootstrap test site.    
-https://samplifier.github.io/FlightSight-Aviation/
+# FlightSight Aviation
+Live site for FlightSight Aviation, LLC 2017.    
+http://flightsightaviation.com/
