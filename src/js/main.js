@@ -46,14 +46,6 @@ flightSightApp.controller('HomeController', function($scope) {
         }
     $scope.isNavCollapsed = true;
     $scope.isCollapsed = false;
-    // $scope.toggleNavDropDown = function() {
-    //     console.log(navDropDown);
-    //     if (navDropDown[0].className === 'navDropDown displayToggle') {
-    //         navDropDown[0].className = 'navDropDown';
-    //     } else if (navDropDown[0].className === 'navDropDown') {
-    //         navDropDown[0].className = 'navDropDown displayToggle';
-    //     }
-    // }
     $scope.navDrop = {
         toggleNavDropDown: function() {
             if (navDropDown[0].className === 'navDropDown displayToggle') { //if services menu closed, open it
