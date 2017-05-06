@@ -52,7 +52,7 @@ module.exports = function(grunt) {
             },
             app: {
                 files: {
-                    './lib/js/annotated/main.js': ['src/js/*js']
+                    './lib/js/annotated/main.js': ['src/js/*.js']
                 }
             }
         },
