@@ -52,6 +52,7 @@
                     <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#about" class="navLinks">About us</a></li>
                     <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#joinUs" class="navLinks">Join us</a>
                     </li>
+                    <li ng-click="mobileLinkCollapse(); navDrop.closeNavDropDown()"><a href="#events" class="navLinks">Events</a></li>
                 </ul>
             </div>
         </div>
@@ -59,6 +60,7 @@
     <div id="main">
         <div ng-view></div>
     </div>
+
     <footer class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-4">
@@ -93,5 +95,6 @@
     </footer>
 </body>
 <script src="lib/js/annotated/concat/uglify/main.min.js"></script>
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJSNrODXCwRhAPtojFLCR79bU78BHNZw0&callback=initMap">
+</script>
 </html>

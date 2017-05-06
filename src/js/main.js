@@ -28,6 +28,10 @@ flightSightApp.config(function($routeProvider) {
         .when('/about', {
             templateUrl: 'aboutUs.html',
             controller: 'AboutUsController'
+        })
+        .when('/events', {
+            templateUrl: 'events.html',
+            controller: 'EventsController'
         });
 });
 // always scroll by 50 fewer pixels
@@ -74,8 +78,8 @@ flightSightApp.controller('AviationServicesController', function($scope) {
     $scope.even = true;
     $scope.odd;
     $scope.clickCount = 0;
-    $scope.langSwitch = function(){
-        $scope.clickCount ++;
+    $scope.langSwitch = function() {
+        $scope.clickCount++;
         if ($scope.clickCount % 2 !== 0) {
             $scope.even = false;
             $scope.odd = true;
@@ -90,9 +94,35 @@ flightSightApp.controller('MediaController', ['$scope', '$location', '$anchorScr
         $anchorScroll(mediaScroller.scrollId());
     }
 ]);
-flightSightApp.controller('ContactController', function($scope) {});
+flightSightApp.controller('ContactController', function($scope) {
+    initMap();
+});
 flightSightApp.controller('JoinUsController', function($scope) {});
-flightSightApp.controller('AboutUsController', function($scope) {})
+flightSightApp.controller('AboutUsController', function($scope) {});
+flightSightApp.controller('EventsController', function($scope) {
+    var width = window.innerWidth;
+    var mobileClass = document.getElementsByClassName('mobile')[0];
+    var desktopClass = document.getElementsByClassName('desktop')[0];
+    $scope.check = {
+        desktop: null,
+        mobile: null
+    }
+    if (width < 650) {
+        $scope.check.mobile = true;
+    } else {
+        $scope.check.desktop = true;
+    }
+    window.addEventListener('resize', function() {
+        width = window.innerWidth;
+        if (width < 650) {
+            desktopClass.className = 'desktop hidden';
+            mobileClass.className = 'mobile';
+        } else if (width >= 650) {
+            mobileClass.className = 'mobile hidden';
+            desktopClass.className = 'desktop';
+        }
+    })
+});
 // Factory
 flightSightApp.factory('mediaScroller', function() {
     var service = {};
