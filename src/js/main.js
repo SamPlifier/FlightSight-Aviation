@@ -32,6 +32,10 @@ flightSightApp.config(function($routeProvider) {
         .when('/events', {
             templateUrl: 'events.html',
             controller: 'EventsController'
+        })
+        .when('/privacy', {
+            templateUrl: 'privacy.html',
+            controller: 'PrivacyController'
         });
 });
 // always scroll by 50 fewer pixels

@@ -7,7 +7,6 @@ function fixNavTop() {
     navbar.className = 'navbar navbar-inverse navbar-fixed-top';
     main.className = 'scrollMargin';
 }
-
 function unfixNav() {
     navbar.className = 'navbar navbar-inverse';
     main.className = '';
