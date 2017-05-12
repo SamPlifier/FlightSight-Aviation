@@ -68,6 +68,9 @@ flightSightApp.controller('HomeController', function($scope) {
             }
         }
     }
+    $scope.privacy = function() {
+        window.scrollTo(0,350);
+    }
 });
 flightSightApp.controller('DroneServicesController', ['$scope', '$location', '$anchorScroll', 'mediaScroller',
     function($scope, $location, $anchorScroll, mediaScroller) {
@@ -127,6 +130,7 @@ flightSightApp.controller('EventsController', function($scope) {
         }
     })
 });
+flightSightApp.controller('PrivacyController', function($scope) {});
 // Factory
 flightSightApp.factory('mediaScroller', function() {
     var service = {};
