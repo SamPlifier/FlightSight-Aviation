@@ -1,13 +1,14 @@
 @media (max-width: 767px) {
     header {
-        height: 350px;
+        height: 450px;
 
         .headerLogo {
-            height: 350px;
+            height: 450px;
             background-position: center;
             justify-content: center;
+
             img {
-                width:90%;
+                width: 90%;
             }
         }
     }
@@ -16,17 +17,29 @@
         .navbar-nav {
             display: inline;
         }
+
         .navDropDown {
             position: inherit;
             text-align: center;
             padding: 10px 0;
+
             li {
                 margin: 0;
             }
+
             li a.navLinks {
                 padding: 10px 15px;
             }
         }
+    }
+    .homeContainer {
+        .welcome {
+            top: 20px;
+        }
+    }
+    #homeDrone {
+        z-index: -1;
+        margin-top: -170px;
     }
 
     .aboutOwner {

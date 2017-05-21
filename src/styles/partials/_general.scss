@@ -21,8 +21,7 @@ header {
     justify-content: center;
 
     .headerLogo {
-        opacity: 0.9;
-        height: 230px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         background: url("../../lib/assets/12.png");
@@ -38,14 +37,31 @@ header {
         }
 
         img {
-            width: 343.72px;
-            margin: 10px;
+            width: 480px;
+            margin: 20px;
         }
+    }
+}
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .welcome {
+        font-size: 2.5rem;
+        position: relative;
+        top: 50px;
+        color: white;
+        text-align: center;
+        background: #222;
+        padding: 10px;
     }
 }
 
 #homeDrone {
     object-fit: cover;
+    margin-top: -90px;
     width: 100vw;
     height: 73vh;
     object-position: center;
