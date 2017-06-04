@@ -113,6 +113,10 @@ nav.navbar {
         display: flex;
         justify-content: center;
         float: none;
+
+        li a {
+            color: #ef3d39;
+        }
     }
 
     .displayToggle {
@@ -127,6 +131,8 @@ nav.navbar {
         width: 100%;
         position: absolute;
         background: #9d9d9d;
+        border: 1px solid #333;
+        border-top: none;
 
         li {
             line-height: 20px;

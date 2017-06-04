@@ -36,6 +36,10 @@ flightSightApp.config(function($routeProvider) {
         .when('/privacy', {
             templateUrl: 'privacy.html',
             controller: 'PrivacyController'
+        })
+        .when('/pricing', {
+            templateUrl: 'pricing.html',
+            controller: 'PricingController'
         });
 });
 // always scroll by 50 fewer pixels
@@ -130,6 +134,7 @@ flightSightApp.controller('EventsController', function($scope) {
         }
     })
 });
+flightSightApp.controller('PricingController', function($scope){});
 flightSightApp.controller('PrivacyController', function($scope) {});
 // Factory
 flightSightApp.factory('mediaScroller', function() {
