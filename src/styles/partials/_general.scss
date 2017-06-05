@@ -115,7 +115,8 @@ nav.navbar {
         float: none;
 
         li a {
-            color: #ef3d39;
+            color: white;
+            font-size: 16px;
         }
     }
 
@@ -208,7 +209,12 @@ nav.navbar {
         color: #ffc107;
     }
 }
-
+.productsContainer {
+    .customPackages {
+        margin:5px 0px 20px 0px;
+        font-size:18px;
+    }
+}
 .productsExample:hover {
     cursor: pointer;
 }
