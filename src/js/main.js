@@ -73,7 +73,7 @@ flightSightApp.controller('HomeController', function($scope) {
         }
     }
     $scope.privacy = function() {
-        window.scrollTo(0,350);
+        window.scrollTo(0, 350);
     }
 });
 flightSightApp.controller('DroneServicesController', ['$scope', '$location', '$anchorScroll', 'mediaScroller',
@@ -86,17 +86,19 @@ flightSightApp.controller('DroneServicesController', ['$scope', '$location', '$a
     }
 ]);
 flightSightApp.controller('AviationServicesController', function($scope) {
-    $scope.even = true;
-    $scope.odd;
-    $scope.clickCount = 0;
-    $scope.langSwitch = function() {
-        $scope.clickCount++;
-        if ($scope.clickCount % 2 !== 0) {
-            $scope.even = false;
-            $scope.odd = true;
-        } else {
-            $scope.even = true;
-            $scope.odd = false;
+    $scope.language = {
+        even: true,
+        odd: '',
+        clickCount: 0,
+        langSwitch: function() {
+            this.clickCount++;
+            if (this.clickCount % 2 !== 0) {
+                this.even = false;
+                this.odd = true;
+            } else {
+                this.even = true;
+                this.odd = false;
+            }
         }
     }
 });
@@ -134,7 +136,7 @@ flightSightApp.controller('EventsController', function($scope) {
         }
     })
 });
-flightSightApp.controller('PricingController', function($scope){});
+flightSightApp.controller('PricingController', function($scope) {});
 flightSightApp.controller('PrivacyController', function($scope) {});
 // Factory
 flightSightApp.factory('mediaScroller', function() {
