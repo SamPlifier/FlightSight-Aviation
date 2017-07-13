@@ -41,7 +41,7 @@ flightSightApp.config(function($routeProvider, $locationProvider) {
             templateUrl: 'pricing.html',
             controller: 'PricingController'
         });
-        $locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
 });
 
 // always scroll by 50 fewer pixels
