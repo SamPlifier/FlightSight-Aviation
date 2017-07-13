@@ -1,5 +1,5 @@
 var flightSightApp = angular.module('flightSightAviationApp', ['ngRoute', 'ui.bootstrap', 'ngAnimate']);
-flightSightApp.config(function($routeProvider) {
+flightSightApp.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'home.html',
@@ -41,7 +41,9 @@ flightSightApp.config(function($routeProvider) {
             templateUrl: 'pricing.html',
             controller: 'PricingController'
         });
+        $locationProvider.html5Mode(true);
 });
+
 // always scroll by 50 fewer pixels
 flightSightApp.run(['$anchorScroll', function($anchorScroll) {
     $anchorScroll.yOffset = 50;
