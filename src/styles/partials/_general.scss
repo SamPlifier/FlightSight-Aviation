@@ -27,7 +27,7 @@ header {
         height: 400px;
         display: flex;
         flex-direction: column;
-        background: url("../../lib/assets/12.jpg");
+        background: url("../../lib/assets/logoBackground.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -62,7 +62,7 @@ header {
     }
 }
 
-#homeDrone {
+.homeDrone {
     object-fit: cover;
     margin-top: -90px;
     width: 100vw;
