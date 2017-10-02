@@ -3,6 +3,7 @@ body {
         display: none;
     }
 }
+
 div.navbar-collapse.text-center.in.collapse {
     height: 369px;
 }
@@ -64,7 +65,7 @@ header {
 
 .homeDrone {
     object-fit: cover;
-    margin-top: -90px;
+    margin-top: -50px;
     width: 100vw;
     height: 73vh;
     object-position: center;
@@ -112,6 +113,15 @@ nav.navbar {
     margin-bottom: 0;
     width: 100vw;
 
+    .mobileNavTitle {
+        float: left;
+        color: white;
+        font-weight: 100;
+        letter-spacing: 2px;
+        margin: 15px 0 12px 15px;
+        display: none;
+    }
+
     .navbar-nav {
         display: flex;
         justify-content: center;
@@ -120,8 +130,11 @@ nav.navbar {
         li a {
             color: white;
             font-size: 16px;
+            font-weight: 100;
+            letter-spacing: 1px;
 
-            &:hover, &:focus {
+            &:focus,
+            &:hover {
                 color: #F44336;
             }
         }
@@ -217,11 +230,13 @@ nav.navbar {
     }
 }
 
-.productsContainer, .eventsContainer {
+.eventsContainer,
+.productsContainer {
     .customNotice {
         margin: 5px 0 20px;
         font-size: 18px;
     }
+
     iframe {
         margin-bottom: 30px;
     }
@@ -277,13 +292,19 @@ nav.navbar {
     .calendar {
         display: flex;
         justify-content: center;
+        margin-bottom: 30px;
+        height: 600px;
+        background: url(../../lib/assets/droneBizLogoBlue.svg);
+        background-size: initial;
+        background-position: center;
+        background-repeat: no-repeat;
 
         iframe {
             height: 600px;
             width: 100%;
             border: none;
-            background-color: #333;
             padding: 15px;
+            opacity:.9;
 
             body {
                 display: flex;
