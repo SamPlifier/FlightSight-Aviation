@@ -15,8 +15,9 @@
 
     nav.navbar {
         .mobileNavTitle {
-            display:block;
+            display: block;
         }
+
         .navbar-nav {
             display: inline;
         }
@@ -25,7 +26,7 @@
             position: inherit;
             text-align: center;
             padding: 10px 0;
-            border:none;
+            border: none;
 
             li {
                 margin: 0;
@@ -36,11 +37,18 @@
             }
         }
     }
+
     .homeContainer {
-        .welcome {
-            top: 20px;
+        .dronesWeUse {
+            .droneImageSect {
+                .homeDroneImg {
+                    height: auto;
+                    width: 90%;
+                }
+            }
         }
     }
+
     .homeDrone {
         z-index: -1;
         margin-top: -105px;
