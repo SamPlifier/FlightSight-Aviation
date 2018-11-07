@@ -72,7 +72,14 @@ flightSightApp.controller('HomeController', function($scope) {
             if (navDropDown[0].className = 'navDropDown') {
                 navDropDown[0].className = 'navDropDown displayToggle';
             }
-        }
+        }//,
+        // outsideClick: function() {
+        //     document.addEventListener('click', function() {
+        //         if (navDropDown[0].className = 'navDropDown') {
+        //             navDropDown[0].className = 'navDropDown displayToggle';
+        //         }
+        //     });
+        // }
     }
     $scope.privacy = function() {
         window.scrollTo(0, 350);
