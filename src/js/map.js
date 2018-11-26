@@ -4,7 +4,7 @@ function initMap() {
         lng: -79.055847
     };
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
+        zoom: 12,
         center: chapelHillNC,
         scrollwheel: false,
         styles: [
@@ -171,6 +171,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: chapelHillNC,
         map: map,
-        animation: google.maps.Animation.DROP
+        animation: google.maps.Animation.DROP,
+        icon: "lib/assets/favicon.png"
     });
 }
